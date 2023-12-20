@@ -5,7 +5,7 @@ import plotly.express as px
 
 st.title("District ERR RSS Quadrant")
 local_string = r"C:\Users\kpacheco\Documents\USMC\District\District ERR RSS_Index 2023.csv"
-git_string = r"https://raw.githubusercontent.com/KeriannePacheco/streamlit_districtapp/main/District%20ERR%20RSS_Index%202023.csv"
+git_string = r"https://raw.githubusercontent.com/KeriannePacheco/streamlit_districtapp/main/District%20ERR%20RSS_Index%202023.csv?token=GHSAT0AAAAAACLYRUM77ECWANQTFNAMMXVCZMCI5ZQ"
 
 @st.cache_data 
 def import_data(path):
