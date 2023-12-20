@@ -5,13 +5,13 @@ import plotly.express as px
 
 st.title("District ERR RSS Quadrant")
 local_string = r"C:\Users\kpacheco\Documents\USMC\District\District ERR RSS_Index 2023.csv"
-git_string = r"District ERR RSS_Index 2023.csv"
+git_string = r"https://github.com/KeriannePacheco/streamlit_districtapp/blob/main/District%20ERR%20RSS_Index%202023.csv?raw=true"
 
 @st.cache_data 
 def import_data(path):
     return pd.read_csv(path)
 
-out_df = import_data(local_string)
+out_df = import_data(git_string)
 #st.write(out_df)
 
 def define_district(rs):
